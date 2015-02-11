@@ -8,6 +8,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #000000;
+	font-family: font-family: 'Arvo', serif;
 }
 body.story {
 	background: #d95930;
