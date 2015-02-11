@@ -8,7 +8,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #000000;
-	font-family: font-family: 'Arvo', serif;
+	font-family: 'Arvo', serif;
 }
 body.story {
 	background: #d95930;
@@ -83,8 +83,7 @@ nav a {
 	text-decoration: none;
 	text-transform: uppercase;
 	text-shadow: 2px 1px 5px rgba(0, 0, 0, 1);
-	font-size: 1.25em;
-	font-weight: bold;
+	font-size: 1.15em;
 }
 nav a.active, nav a:hover {
 	color: #ffe600;
