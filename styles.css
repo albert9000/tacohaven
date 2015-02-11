@@ -1,152 +1,111 @@
-@charset "utf-8";
-/* CSS Document */
-
-body {
-        height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-body.home {
-    background-color: #d05037;
-}
-
-body.breakfast {
-    background-color: #84385f;
-}
-
-body.lunch {
-    background-color: #873c62;
-}
-
-body.bar {
-    background-color: #873c62;
-}
-
-body.story {
-    background-color: #d54427;
-}
-
-p {
-    margin-top: 0;
-}
-
-/* Wrapper */
-#wrapper {
-    width: 100%;
-    height: 100vh;
-    padding-top: 15px;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-body.home #wrapper {
-    background-image: url("images/landing.jpg");
-}
-
-body.breakfast #wrapper {
-    background-image: url("images/breakfast.jpg");
-}
-
-body.lunch #wrapper {
-    background-image: url("images/lunch-dinner.jpg");
-}
-
-body.bar #wrapper {
-    background-image: url("images/bar.jpg");
-}
-
-body.story #wrapper {
-    background-image: url("images/story.jpg");
-}
-
-body.story h1 {
-    margin-bottom: 0;
-}
-
-main {
-    width: 813px;
-    margin: 0 auto;
-}
-
-/* Center stuff */
-.center {
-	text-align: center;	
-}
-
-/* Font colors */
-.white {
-	color: #ffffff;
-}
-
-.yellow {
-    color: #ffe600;
-}
-
-/* Bullet spacing */
-.bullet {
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-/* Navigation */
-nav ul {
-	list-style-type: none;	
-	margin: 0 0 25px 0;
-	padding: 0;	
-}
-
-nav a {
-	color: #ffffff;
-	text-decoration: none;
-	text-transform: uppercase;
-        text-shadow: 2px 1px 5px rgba(0, 0, 0, 1);
-        font-size: 1.25em;
-        font-weight: bold;
-}
-
-nav a.active,
-nav a:hover {
-	color: #ffe600;
-}
-
-nav img {
-	margin-bottom: 5px;
-}
-
-/* Responsivness */
-@media(min-width:1024px){
-    #wrapper {
-        //background-position-y: top;
-        height: 1024px;
-    }
-}
-@media(min-width:900px){
-    #wrapper {
-        //background-position-y: top;
-        height: 900px;
-    }
-}
-
-@media(max-width:850px){
-    #wrapper {
-        height: 100vh;
-        //background-size: 150%;
-    }
-    img.logo,
-    img.welcome,
-    main {
-        width: 90%;
-    }
-}
-
-@media(max-width:500px){
-    body.home #wrapper {
-        height: 100vh;
-        //background-image: none;
-    }
-}
-@media(min-width:768px){}
-@media(min-width:992px){}
-@media(min-width:1200px){}
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #000000;
+}
+body.story {
+	background: #d95930;
+}
+p {
+	margin-top: 0;
+}
+h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/* Wrapper */
+
+#wrapper {
+	width: 1024px;
+	height: 819px;
+	padding-top: 35px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+body.home #wrapper {
+	background-image: url("images/landing.jpg");
+}
+body.breakfast #wrapper {
+	background-image: url("images/breakfast.jpg");
+}
+body.lunch #wrapper {
+	background-image: url("images/lunch-dinner.jpg");
+}
+body.bar #wrapper {
+	background-image: url("images/bar.jpg");
+}
+body.story #wrapper {
+	background-image: url("images/story.jpg");
+}
+body.story h1 {
+	margin-bottom: 0;
+}
+main {
+	width: 813px;
+	margin: 0 auto;
+}
+/* Center stuff */
+
+.center {
+	text-align: center;
+}
+/* Font colors */
+
+.white {
+	color: #ffffff;
+}
+.yellow {
+	color: #ffe600;
+}
+/* Bullet spacing */
+
+.bullet {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/* Navigation */
+
+nav ul {
+	list-style-type: none;
+	margin: 0 0 25px 0;
+	padding: 0;
+}
+nav a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: 2px 1px 5px rgba(0, 0, 0, 1);
+	font-size: 1.25em;
+	font-weight: bold;
+}
+nav a.active, nav a:hover {
+	color: #ffe600;
+}
+nav img {
+	margin-bottom: 5px;
+}
+
+
+
+/* Responsivness */
+@media(max-width:1024px) {
+	#wrapper {
+		width: 100%;
+		padding-top: 15px;
+	}
+	img.logo,
+	img.welcome,
+	main {
+		width: 90%;
+	}
+	.bullet {
+		margin: 0 5px;	
+	}
+}
