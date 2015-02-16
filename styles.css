@@ -1,13 +1,62 @@
 @charset "utf-8";
 /* CSS Document */
 
-
+/* Boostrap Overrides */
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+.navbar {
+	margin-bottom: 0;
+}
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+.nav > li > a {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.navbar-inner {
+  text-align:center;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: transparent;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #d63700;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: transparent;
+}
+.navbar-default .navbar-text {
+	color: #d63700;
+}
+.navbar-text {
+	margin-top: 10px;
+	margin-bottom: 0;
+	text-align: center;
+}
+.jumbotron {
+	padding: 0;
+}
+.jumbotron .container {
+	width: 100%;
+	padding: 0;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
 
 body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background: #000000;
+	background: #64ccdb;
 	font-family: 'Arvo', serif;
 }
 body.story {
@@ -30,7 +79,7 @@ h1 {
 	background-repeat: no-repeat;
 	margin: 0 auto;
 }
-body.home #wrapper {
+body.home .jumbotron .container {
 	background-image: url("images/landing.jpg");
 }
 body.breakfast #wrapper {
@@ -48,10 +97,14 @@ body.story #wrapper {
 body.story h1 {
 	margin-bottom: 0;
 }
-main {
+nav {
+	height: 55px;
+}
+/*main {
 	width: 813px;
 	margin: 0 auto;
-}
+	background-color: #000000;
+}*/
 /* Center stuff */
 
 .center {
@@ -62,14 +115,19 @@ main {
 .white {
 	color: #ffffff;
 }
+.red {
+	color: #d63700;
+}
 .yellow {
 	color: #ffe600;
 }
-/* Bullet spacing */
 
-.bullet {
-	margin-left: 10px;
-	margin-right: 10px;
+/* Bullet spacing */
+.navbar-text {
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 1.15em;
+	font-weight: bold;
 }
 /* Navigation */
 
@@ -82,8 +140,8 @@ nav a {
 	color: #ffffff;
 	text-decoration: none;
 	text-transform: uppercase;
-	text-shadow: 2px 1px 5px rgba(0, 0, 0, 1);
 	font-size: 1.15em;
+	font-weight: bold;
 }
 nav a.active, nav a:hover {
 	color: #ffe600;
