@@ -21,8 +21,10 @@
 	padding-top: 0;
 	padding-bottom: 0;
 }
-.navbar-inner {
+.nav-inner {
   text-align:center;
+  margin-top: 15px;
+  font-size: 1.1em;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	border-color: transparent;
@@ -35,6 +37,7 @@
 }
 .navbar-default .navbar-text {
 	color: #d63700;
+	margin-top: 13px;
 }
 .navbar-text {
 	margin-top: 10px;
@@ -47,7 +50,7 @@
 .jumbotron .container {
 	width: 100%;
 	padding: 0;
-	background-size: 100%;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: top center;
 }
@@ -149,21 +152,66 @@ nav a.active, nav a:hover {
 nav img {
 	margin-bottom: 5px;
 }
+.tableRow {
+	display: table;
+	width: 100%;
+}
+.vcenter {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.address {
+	font-size: 1.25em;
+	font-weight: bold;
+} 
+.bullet {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 1.15em;
+	font-weight: bold;
+}
+footer {
+	padding-bottom: 25px;
+}
 
-
-
-/* Responsivness */
+/** Responsive stuff **/
 @media(max-width:1024px) {
 	#wrapper {
 		width: 100%;
 		padding-top: 15px;
 	}
 	img.logo,
-	img.welcome,
-	main {
+	img.welcome {
 		width: 90%;
 	}
-	.bullet {
-		margin: 0 5px;	
+	img.menu-icon {
+		width: 40%;
+	}
+	nav {
+		height: auto;
 	}
 }
+@media(max-width: 600px) {	
+	.navbar-text {
+		display: none;
+		margin: 0;
+	}
+	.nav-inner {
+		margin-top: 5px;
+	}
+	.navbar .nav,
+	.navbar .nav > li {
+	  display:block;
+	  *display:block; /* ie7 fix */
+	  *zoom:1; /* hasLayout ie7 trigger */
+	  vertical-align: top;
+	}
+	.bullet {
+		margin: 0 5px;
+		width: 100%;
+		display: block;
+		color: transparent;
+	}
+}
+
