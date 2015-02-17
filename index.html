@@ -13,7 +13,13 @@
   <link href="styles.css" rel="stylesheet">
   
   <!-- Google Fonts -->
-<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="javascript.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,7 +33,7 @@
 <div class="container-fluid">  
   <nav class="navbar navbar-default center">
     <div class="container-fluid">
-        <div class="collapse navbar-collapse">
+        <!--div class="collapse navbar-collapse"-->
           <ul class="nav nav-inner">
             <li><a class="red breakfast" href="breakfast.html">Breakfast</a></li>
             <li><sub class="navbar-text">*</sub></li>
@@ -39,22 +45,21 @@
             <li><sub class="navbar-text">*</sub></li>
             <li><a class="red gallery" href="gallery.html">Gallery</a></li>
           </ul>
-        </div>
+        <!--/div-->
     </div>
   </nav>
   <main id="main" class="row">
-    <div class="jumbotron">
-      <div class="container">
-        <!--h1 class="center"><img width="100%" class="logo" src="images/landing.jpg" alt="Taco Haven | Since 1969" title="Taco Haven | Since 1969" /></h1-->
-        <img src="images/check-out-the-menu.png" />
+    <div class="jumbotron tableRow">
+      <div id="fart" class="container vcenter">
+        <!--img class="menu-icon" src="images/check-out-the-menu.png" /-->
       </div>
     </div>
   </main>
   <footer class="row">
     <div class="col-md-12">
     <p class="center"><img class="welcome" src="images/welcome.png" alt="Bienvenidos mis amigos de parte de La Familia Torres" /></p>
-    <p class="center"><img src="images/element.png" width="132" height="17" /></p>
-      <p class="white center">1032 South Presa <span class="bullet">•</span> Phone (210) 533-2171<span class="bullet">•</span>Fax (210) 533-2444<span class="bullet">•</span>CATERING<span class="bullet">•</span>DELIVERY</p>
+    <p class="center"><img style="margin: 20px;" src="images/element.png" width="132" height="17" /></p>
+      <p class="address red center">1032 South Presa <sub class="bullet">*</sub> Phone (210) 533-2171<sub class="bullet">*</sub>Fax (210) 533-2444<sub class="bullet">*</sub>CATERING<sub class="bullet">*</sub>DELIVERY</p>
     </div>
   </footer>
 </div><!-- /#container -->
