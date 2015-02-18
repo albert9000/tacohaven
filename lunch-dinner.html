@@ -1,33 +1,73 @@
-<!DOCTYPE HTML>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Home | Taco Haven</title>
-<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
-<link href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lunch & Dinner | Taco Haven</title>
+
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="javascript.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
 
 <body class="lunch">
-<div id="wrapper">
-  <header id="header">
-    <p class="white center">1032 South Presa <span class="bullet">•</span> Phone (210) 533-2171<span class="bullet">•</span>Fax (210) 533-2444<span class="bullet">•</span>CATERING<span class="bullet">•</span>DELIVERY</p>
-  </header>
-  <main id="main"> <a href="index.html" >
-    <h1 class="center"><img class="logo" src="images/logo.png" alt="Taco Haven | Since 1969" title="Taco Haven | Since 1969" /></h1>
-    </a>
-    <p class="center"><img src="images/element.png" width="132" height="17" /></p>
-  </main>
-  <nav class="center">
-    <ul>
-      <li><a class="white" href="breakfast.html">Breakfast Menu</a></li>
-      <li><img src="images/divider-1.png" width="75" height="1" /></li>
-      <li><a class="active" href="lunch-dinner.pdf" target="_blank">Click To View Our Lunch & Dinner Menu</a></li>
-      <li><img src="images/divider-1.png" width="75" height="1" /></li>
-      <li><a class="white" href="bar.html">Bar Menu</a></li>
-      <li><img src="images/divider-1.png" width="75" height="1" /></li>
-      <li><a class="white" href="story.html">The Taco Haven Story</a></li>
-    </ul>
+<div class="container-fluid">  
+  <nav class="navbar navbar-default center">
+    <div class="container-fluid">
+        <!--div class="collapse navbar-collapse"-->
+          <ul class="nav nav-inner">
+            <li><a class="red breakfast" href="breakfast.html">Breakfast</a></li>
+            <li><sub class="navbar-text">*</sub></li>
+            <li><a class="red active" href="lunch-dinner.html">Lunch & Dinner</a></li>
+            <li><sub class="navbar-text">*</sub></li>
+            <li><a class="red bar" href="bar.html">Bar</a></li>
+            <li><sub class="navbar-text">*</sub></li>
+            <li><a class="red story" href="story.html">Taco Haven Story</a></li>
+            <li><sub class="navbar-text">*</sub></li>
+            <li><a class="red gallery" href="gallery.html">Gallery</a></li>
+          </ul>
+        <!--/div-->
+    </div>
   </nav>
-</div>
+  <main id="main" class="row">
+    <div class="jumbotron tableRow">
+      <div id="fart" class="container vcenter">
+        <a class="desktop-only" href="menus/lunch-dinner.pdf" target="_blank"><img class="menu-icon" src="images/check-out-the-menu.png" /></a>
+      </div>
+    </div>
+  </main>
+  <footer class="row">
+    <div class="col-md-12">
+    <p class="mobile-only center"><a href="menus/lunch-dinner.pdf" target="_blank"><img class="menu-icon" src="images/check-out-the-menu.png" /></a></p>
+    <p class="center"><img class="welcome" src="images/welcome.png" alt="Bienvenidos mis amigos de parte de La Familia Torres" /></p>
+    <p class="center"><img style="margin: 20px;" src="images/element.png" width="132" height="17" /></p>
+      <p class="address red center">1032 South Presa <sub class="bullet">*</sub> Phone (210) 533-2171<sub class="bullet">*</sub>Fax (210) 533-2444<sub class="bullet">*</sub>CATERING<sub class="bullet">*</sub>DELIVERY</p>
+      <p class="center" style="margin-top: 20px;">
+        <a href="https://www.facebook.com/tacohaven" target="_blank"><img src="images/fb.png" /></a>
+        &nbsp;
+        <a href="https://twitter.com/tacohavenpresa" target="_blank"><img src="images/twitter.png" /></a>
+      </p>
+    </div>
+  </footer>
+</div><!-- /#container -->
 </body>
 </html>
