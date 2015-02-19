@@ -62,9 +62,6 @@ body {
 	background: #64ccdb;
 	font-family: 'Arvo', serif;
 }
-body.story {
-	background: #d95930;
-}
 p {
 	margin-top: 0;
 }
@@ -85,16 +82,16 @@ h1 {
 body.home .jumbotron .container {
 	background-image: url("images/landing.jpg");
 }
-body.breakfast #wrapper {
+body.breakfast .jumbotron .container {
 	background-image: url("images/breakfast.jpg");
 }
-body.lunch #wrapper {
+body.lunch .jumbotron .container {
 	background-image: url("images/lunch-dinner.jpg");
 }
-body.bar #wrapper {
+body.bar .jumbotron .container {
 	background-image: url("images/bar.jpg");
 }
-body.story #wrapper {
+body.story .jumbotron .container {
 	background-image: url("images/story.jpg");
 }
 body.story h1 {
@@ -174,7 +171,9 @@ nav img {
 footer {
 	padding-bottom: 25px;
 }
-
+.mobile-only {
+	display: none;
+}
 /** Responsive stuff **/
 @media(max-width:1024px) {
 	#wrapper {
@@ -212,6 +211,12 @@ footer {
 		width: 100%;
 		display: block;
 		color: transparent;
+	}
+	.mobile-only {
+		display: block;
+	}
+	.desktop-only {
+		display: none;
 	}
 }
 
